@@ -798,6 +798,14 @@ letter-spacing: -0.03em;
 color: #fc8000;
 }
 
+.reverse-aging__img {
+  width: 100%;
+  max-width: fit-content;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
 .solution__text{
     font-family: var(--font-family);
 font-weight: 500;
