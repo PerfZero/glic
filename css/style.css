@@ -29,7 +29,7 @@
 }
 
 .reverse-aging__img{
-  width: 170%;
+  width: 39.896vw;
   max-width: fit-content;
   position: relative;
   left: -110px;
@@ -63,6 +63,10 @@
 .header {
   position: relative;
   z-index: 2;
+}
+
+.solution__block--answer .solution__title{
+  margin-bottom: 20px;
 }
 
 .reverse-aging__title {
@@ -110,7 +114,7 @@
   /* height: 760px; */
   position: absolute;
   background-repeat: no-repeat;
-  top: -630px;
+  top: -730px;
   width: 1258px;
   right: -510px;
   height: auto;
