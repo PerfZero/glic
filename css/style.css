@@ -704,7 +704,7 @@ margin-bottom: 20px;
   .reverse-aging__product-name{
     font-family: var(--third-family);
 font-weight: 400;
-font-size: 88px;
+font-size: 20.465vw;
 text-align: center;
 color: #ff8200;
   }
