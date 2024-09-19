@@ -334,10 +334,17 @@
   color: #000;
 }
 
+.study__grid.collapsed {
+  max-height: 0;
+}
+
 .study__grid {
   display: flex;
   margin-top: 60px;
   justify-content: space-between;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 1000px; 
 }
 
 .study__grid-one .study__item {
@@ -437,12 +444,48 @@
 
 .buy__store-name {
   font-family: var(--font-family);
-  font-weight: 275;
+  font-weight: 400;
+  font-style: italic;
   font-size: 24px;
   line-height: 137%;
   letter-spacing: -0.01em;
   text-align: center;
   color: #000;
+}
+
+.study__toggle img{
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+  top: 21px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+
+.dna-info__container::before{
+  content: '';
+  display: block;
+  background-image: url(/assets/img/dnka.png);
+  position: absolute;
+  width: 272px;
+  height: 272px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dna-info__container::after{
+  content: '';
+  display: block;
+  background-image: url(/assets/img/dnka.png);
+  position: absolute;
+  width: 272px;
+  height: 272px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 17%;
+  transform: rotateZ(90deg);
 }
 
 .buy__store-desk {
@@ -556,6 +599,13 @@
 
 .contact__field input[type="text"] {
   font-family: var(--third-family);
+  font-weight: 500;
+}
+
+
+.contact__field input[type="email"] {
+  font-family: var(--third-family);
+  font-weight: 500;
 }
 
 .contact__field input[type="tel"] {

@@ -130,10 +130,10 @@
 
   <section class="study">
         <div class="study__container container">
-            <h2 class="study__title">Исследование</h2>
-            <h3 class="study__subtitle">NCT01870193</h3>
+          <h2 class="study__title">Исследование <span class="study__toggle"><img src="/assets/img/arrows.svg" alt=""></span></h2>
+          <h3 class="study__subtitle">NCT01870193</h3>
             <p class="study__param">В сравнении c молодыми людьми, у группы лиц старшего возраста наблюдается дефицит GSH, OxS.</p>
-            <div class="study__grid">
+            <div class="study__grid" style="display: flex;">
             <div class="study__grid-one">
                 <div class="study__item">
 
@@ -311,6 +311,24 @@
     logo.classList.toggle('open'); // Добавляет/удаляет класс для изменения цвета логотипа
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.querySelector('.study__toggle');
+    const studyGrid = document.querySelector('.study__grid');
+    const arrowImage = toggleButton.querySelector('img');
+
+    toggleButton.addEventListener('click', function() {
+        if (studyGrid.classList.contains('collapsed')) {
+            studyGrid.classList.remove('collapsed');
+            arrowImage.style.transform = 'rotate(0deg)'; // Стрелка вниз
+        } else {
+            studyGrid.classList.add('collapsed');
+            arrowImage.style.transform = 'rotate(180deg)'; // Стрелка вверх
+        }
+    });
+});
+
+
 
 
 </script>
